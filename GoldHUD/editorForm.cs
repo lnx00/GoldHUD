@@ -168,7 +168,7 @@ namespace GoldHUD
             {
                 using (StreamWriter sw = new StreamWriter(fileInfo.FullName))
                 {
-                    sw.WriteLineAsync(textBox.Text);
+                    sw.WriteLine(textBox.Text);
                 }
             }
             catch (Exception ex)
@@ -183,7 +183,7 @@ namespace GoldHUD
             {
                 using (StreamWriter sw = new StreamWriter(fileInfo.FullName))
                 {
-                    sw.WriteLineAsync(textBox.Text);
+                    sw.WriteLine(textBox.Text);
                     MessageBox.Show(fileInfo.Name + " saved succesfully!", "Succesfully saved.");
                 }
             }
